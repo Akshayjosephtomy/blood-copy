@@ -9,6 +9,16 @@ export class SearchdonorComponent implements OnInit {
 
   constructor() { }
 
+  blood=""
+
+  viewSearch=()=>{
+    let data={
+      "blood":this.blood
+    }
+    console.log(data)
+  }
+
+
   ngOnInit(): void {
   }
 

@@ -9,6 +9,14 @@ export class DeleteComponent implements OnInit {
 
   constructor() { }
 
+  id=""
+  viewDelete=()=>{
+    let data={
+      "id":this.id
+    }
+    console.log(data)
+  }
+
   ngOnInit(): void {
   }
 

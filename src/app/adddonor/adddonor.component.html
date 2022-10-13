@@ -7,58 +7,58 @@
                 
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label class="form-label">Name</label>
-                    <input type="text" placeholder="name" class="form-control">
+                    <input type="text" placeholder="name" class="form-control" name="name" [(ngModel)]="name">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label class="form-label">Blood Group</label>
-                    <select name="" id="" class="form-control">
+                    <select name="" id="" class="form-control" name="blood" [(ngModel)]="blood">
                         <option value="" selected disabled>Choose..</option>
-                        <option value="">A+</option>
-                        <option value="">B+</option>
-                        <option value="">AB+</option>
-                        <option value="">O+</option>
-                        <option value="">A-</option>
-                        <option value="">B-</option>
-                        <option value="">AB-</option>
-                        <option value="">O-</option>
+                        <option value="A+">A+</option>
+                        <option value="B+">B+</option>
+                        <option value="AB+">AB+</option>
+                        <option value="O+">O+</option>
+                        <option value="A-">A-</option>
+                        <option value="B-">B-</option>
+                        <option value="AB-">AB-</option>
+                        <option value="O-">O-</option>
                     </select>
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label class="form-label">D.O.B</label>
-                    <input type="date" placeholder="D.O.B" class="form-control">
+                    <input type="date" placeholder="D.O.B" class="form-control" name="dob" [(ngModel)]="dob">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label class="form-label">Last donation date</label>
-                    <input type="date" placeholder="last donation date" class="form-control">
+                    <input type="date" placeholder="last donation date" class="form-control" name="=ddate" [(ngModel)]="ddate">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label class="form-label">Any previous deseases</label>
-                    <input type="text" placeholder="Any previous deseases" class="form-control">
+                    <input type="text" placeholder="Any previous deseases" class="form-control" name="deseases" [(ngModel)]="deseases">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label class="form-label">last vaccination date</label>
-                    <input type="date" placeholder="last vaccination date" class="form-control">
+                    <input type="date" placeholder="last vaccination date" class="form-control" name="vdate" [(ngModel)]="vdate">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label class="form-label">Address</label>
-                    <textarea name="" placeholder="Address" id="" cols="15" rows="4" class="form-control"></textarea>
+                    <textarea name="address" [(ngModel)]="address" placeholder="Address" id="" cols="15" rows="4" class="form-control"></textarea>
                 </div>
                 
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label class="form-label">Pincode</label>
-                    <input type="text" placeholder="pincode" class="form-control">
+                    <input type="text" placeholder="pincode" class="form-control" name="pincode" [(ngModel)]="pincode">
                 </div>
                 
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label class="form-label">Mobile Number</label>
-                    <input type="text" placeholder="Mobile number" class="form-control">
+                    <input type="text" placeholder="Mobile number" class="form-control" name="mobile" [(ngModel)]="mobile">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label class="form-label">E mail</label>
-                    <input type="email" placeholder="Email" class="form-control">
+                    <input type="email" placeholder="Email" class="form-control" name="email" [(ngModel)]="email">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <button class="btn btn-success">Submit</button>
+                    <button class="btn btn-success" (click)="viewValues()">Submit</button>
                 </div>
             </div>
 

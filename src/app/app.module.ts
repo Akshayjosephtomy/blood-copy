@@ -10,6 +10,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ViewalldonorComponent } from './viewalldonor/viewalldonor.component';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http'
+import { FormsModule } from '@angular/forms';
 
 const link:Routes=[
   {
@@ -39,7 +40,8 @@ const link:Routes=[
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(link),
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
